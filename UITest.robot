@@ -29,15 +29,12 @@ TC-001
     Click Button                     xpath=//*[@id="add-to-cart-sauce-labs-fleece-jacket"]
     Click Button                     xpath=//*[@id="add-to-cart-sauce-labs-onesie"]
     Click Button                     xpath=//*[@id="add-to-cart-test.allthethings()-t-shirt-(red)"]
-    Sleep    20
+    Sleep    2
 
 # Click on Shopping Cart
-    Wait Until Element Is Visible     xpath=//*[@id="shopping_cart_container"]           timeout=10
-    Wait Until Element Is Visible     xpath=//*[@id="shopping_cart_container"]/a         timeout=10
-    Wait Until Element Is Visible     xpath=//*[@id="shopping_cart_container"]/a/span    timeout=10
-    Click Button                      xpath=//*[@id="shopping_cart_container"]
-    Click Button                      xpath=//*[@id="shopping_cart_container"]/a
-    Click Button                      xpath=//*[@id="shopping_cart_container"]/a/span
+    Click Element                      xpath=//*[@id="shopping_cart_container"]
+    Click Element                      xpath=//*[@id="shopping_cart_container"]/a
+    Click Element                      xpath=//*[@id="shopping_cart_container"]/a/span
 
 # Checkout
     Wait Until Element Is Visible     xpath=//*[@id="checkout"]
